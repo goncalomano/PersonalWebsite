@@ -1,0 +1,28 @@
+import React from 'react'
+import Particle from './Particle'
+import blob from '../../src/img/blob.svg';
+import coding from '../../src/img/coding.svg'
+function Introdiv() {
+  return (
+    <div class="Introdiv container-fluid">
+    <div class="row">
+        <div class="col-7 ontop">
+          <div class="NameWrapper">
+            <hr class="UpperHR"/>
+            <h3 class="name">Gonçalo <br/> Mano</h3>      
+            <p1 class="smalltext">Web Developer</p1>  
+            <hr class="DownHR"/>    
+            <button data-tilt="" data-tilt-max="5" data-tilt-speed="200" data-tilt-perspective="500" onClick={() => document.getElementById('SecondDiv').scrollIntoView()} class="aboutmebtn">About Me</button>
+          </div>
+        </div> 
+        <div class="col-5">
+            <img class="coding" src={coding} alt="coding"/>
+            <img class="blob" src={blob} alt="blob"/>
+        </div>
+    </div>
+    <Particle/>
+    </div>
+  )
+}
+
+export default Introdiv

@@ -1,0 +1,457 @@
+:root{
+    --body-bg: rgb(50, 54, 71);
+    --text-color: #EBE6E0;
+    --body-bg-darker: #323647;
+    --buttons-bg: rgb(115, 99, 227);
+    --highlited-color:  rgb(255,165,0);
+    --darkest-dark: rgb(1, 1, 1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--body-bg);
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none; 
+}
+
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+@keyframes float {
+	0% {
+		box-shadow: 0 0.625vw 1.875vw 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 3.125vw 1.875vw 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 0.625vw 1.875vw 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+} 
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .navbar-toggler{
+        color:var(--text-color) !important;
+    }
+    .navbar{
+        color: var(--text-color);
+        font-weight: 700;
+        background-color: var(--body-bg-darker);
+        border-radius: 4vw !important;
+    }
+    .nav-link{
+        color: var(--text-color);
+        font-weight: 700;
+    }
+    .Introdiv{
+        overflow-x: hidden;
+        padding-top: 2vh;
+        height: 100vh !important;
+        background-color: var(--body-bg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .coding{
+        margin-top: 5vh !important;
+    }
+    .UpperHR{
+        background-color: white;
+        height: 1.5vh;
+        width:50%;
+        margin-left: 3vw;
+        text-align:left;
+        margin-left:0;
+    }
+}
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+    .navbar-toggler{
+        color:var(--highlited-color) !important;
+    }
+
+    .dropdown-icon{
+        color: var(--text-color);
+        font-weight: 500;
+    }
+    .navbar{
+        box-shadow: 0px 1.5vw 1.5vw 0px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0px 1.5vw 1.5vw 0px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 1.5vw 1.5vw 0px rgba(0, 0, 0, 0.3);
+        margin-left: 2.5vw !important;
+        margin-right: 2.5vw !important;
+        color: var(--text-color);
+        font-weight: 700;
+        background-color: var(--body-bg-darker);
+        border-radius: 4vw !important;
+    }
+    .nav-link{
+        font-family:'Poppins', sans-serif;
+        color: var(--text-color);
+        font-weight: 700;
+        transition: color 0.3s;
+    }
+
+    .nav-link:hover{
+        color: var(--highlited-color);
+    }
+    .Introdiv{
+        overflow-x: hidden;
+        padding-top: 2vh;
+        height: 100vh !important;
+        background-color: var(--body-bg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .UpperHR{
+        background-color: white;
+        height: 1.5vh;
+        width:50%;
+        margin-left: 3vw;
+        text-align:left;
+        margin-left:0;
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+    .navbar-toggler-icon{
+        color:var(--text-color) !important;
+    }
+    .navbar{
+        color: var(--text-color);
+        font-weight: 700;
+        background-color: var(--body-bg-darker);
+        border-radius: 4vw !important;
+        width: 1vw !important;
+    }
+    
+    .nav-link{
+        color: var(--text-color);
+        font-weight: 700;
+    }
+    .Introdiv{
+        overflow-x: hidden;
+        padding-top: 2vh;
+        height: 100vh !important;
+        background-color: var(--body-bg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .UpperHR{
+        background-color: white;
+        height: 1.5vh;
+        margin-left: 3vw;
+        width:50%;
+        text-align:left;
+        margin-left:0;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    .navbar{
+        box-shadow: 0px 2vw 1.5vw 0px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0px 2vw 1.5vw 0px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 2vw 1.5vw 0px rgba(0, 0, 0, 0.3);
+        margin-left: 2.5vw !important;
+        margin-right: 2.5vw !important;
+        color: var(--text-color);
+        font-weight: 700;
+        background-color: var(--body-bg-darker);
+        border-radius: 4vw !important;
+    }
+    .Introdiv{
+        overflow: hidden;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .particles{
+        position:absolute
+        z-index: -1;
+    }
+    .coding{
+        position: absolute;
+        padding-top: 7.5vh !important;
+        width: 50%;
+        margin-left: -23vh;
+        z-index:5 !important;
+        filter: drop-shadow(0.5vw 1vw 0.75vw rgb(0 0 0 / 0.4));
+    }
+
+    .blob{
+        position: absolute;
+        width: 50%;
+        margin-left: -20vh;
+        margin-top: -2vw;
+        z-index: 1;
+        filter: drop-shadow(0.5vw 1vw 0.75vw rgb(0 0 0 / 0.4));
+    }
+    .UpperHR{
+        margin-left: 3.4vw;
+        background-color: #FF0066;
+        opacity: 1;
+        height: 1vh;
+        width:15vw;
+        position:absolute;
+        margin-top: -2vw;
+        height: 0.5vh;
+    }
+    .DownHR{
+        margin-left: 3.4vw;
+        background-color: #7363E3;
+        opacity: 1;
+        width:35vw;
+        position:absolute;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        height: 1vh;
+    }
+    .AboutMeHeader{
+        margin-top: 2.5vh;
+        font-family:'Poppins', sans-serif;
+        font-weight: 700;
+        color: var(--text-color);
+        margin-left: 3vw;
+        font-size: 4vw;
+    }
+    .AboutMeText{
+        margin-top: 3vh;
+        font-family:'Poppins', sans-serif;
+        font-weight: 300;
+        color: var(--text-color);
+        margin-left: 3vw;
+        font-size: 1.3vw;
+        word-wrap: break-word;
+        margin-bottom: 0vw;
+        text-align:left;
+        line-height:2vw;
+    }
+    .aboutmebtn{
+        position: absolute;
+        margin-top: 6vw;
+        margin-left: 3vw;
+        height: 5vw;
+        width: 18vw;
+        z-index:3;
+        color: var(--text-color);
+        font-weight: 700;
+        font-family:'Poppins', sans-serif;
+        background-color:#7363E3;
+        border-radius: 1vw;
+        border:none;
+        font-size: 2vw;
+        transition: background-color 0.5s;
+        -webkit-box-shadow: 0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        -moz-box-shadow:    0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        box-shadow:         0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+    }
+    .aboutmebtn:hover{
+        background-color:#7f84eb;
+    }
+    .aboutmebutton{
+        margin-top: 15vh;
+        font-family:'Poppins', sans-serif;
+        color: var(--text-color);
+        background-color: #FF0066;
+        border-radius: 2vw;
+        text-align: center;
+        font-weight: 600;
+        width: 10vw;
+        margin-left: 3vw;
+    }
+    .gmano{
+        margin-left: 20vw;
+        margin-top: 10vw;
+        width: auto;
+        height: 20vw;
+        border-radius: 50%;
+        animation: float 6s ease-in-out infinite;
+    }
+    .name{
+        font-family:'Poppins', sans-serif;
+        font-size: 7vw;
+        word-wrap: break-word;
+        margin-left: 3vw;
+        font-weight: 700;
+        color: var(--text-color);
+        margin-top: 20vh;
+        position: relative;
+    }
+    .SecondDiv{
+        background-color: #44495C;
+    }
+    .SkillsDiv{
+        background-color:#656E8E;
+    }
+    .MySkillsHeader{
+        margin-top: 2vh;
+        margin-bottom:3vw;
+        font-family:'Poppins', sans-serif;
+        font-size: 3.5vw;
+        word-wrap: break-word;
+        margin-left: 3vw;
+        font-weight: 700;
+        color: var(--text-color);
+    }
+    .skilltitle{
+        color: var(--text-color);
+        font-family:'Poppins', sans-serif;
+        font-weight: 700;
+        margin-bottom: 3vh;
+        margin-left: 3vw;
+    }
+    .skillyear{
+        color: var(--text-color);
+        font-family:'Poppins', sans-serif;
+        font-weight: 300;
+    }
+    .skilltitlediv{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        transform: translateZ(20px);
+    }
+    .skillicons{
+        display:flex;
+        flex-direction: row;
+        justify-content: left;
+        margin-bottom: 1vw;
+        margin-top: 3vw;
+    }
+    .skillicon{
+        font-size: 5vw;
+        margin-left: 3vw;
+    }
+    .smalltext{
+        position:absolute;
+        margin-left: 3.5vw;
+        color: var(--text-color);
+        font-family:'Poppins', sans-serif;
+        font-weight: 500;
+
+    }
+    .html5{
+        color: #E96228;
+    }
+    .css3{
+        color: #04A5D7;
+    }
+    .react{
+        color: #5BC9E2;
+    }
+    .js{
+        color: #EFD81D;
+    }
+    .boot{
+        color: #8411F5;
+    }
+    .skilldiv{
+        background-color: #323647;
+        border-radius: 3vh;
+        width:20%;
+        margin-bottom: 3vw;
+        -webkit-box-shadow: 0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        -moz-box-shadow:    0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        box-shadow:         0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+    }
+
+    .skillsrow{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .skillsbtn{
+        margin-top: 15vh;
+        font-family:'Poppins', sans-serif;
+        color: var(--text-color);
+        background-color: #7263E2;
+        border-radius: 2vw;
+        text-align: center;
+        font-weight: 600;
+        width: 10vw;
+        margin-left: 3vw;
+    }
+    #particles-js canvas{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+    .whatidobtn{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        margin-left: 3vw;
+        height: 5vw;
+        width: 18vw;
+        z-index:3;
+        color: var(--text-color);
+        font-weight: 700;
+        font-family:'Poppins', sans-serif;
+        background-color:#FF0066;
+        border-radius: 1vw;
+        border:none;
+        font-size: 2vw;
+        transition: background-color 0.5s;
+        -webkit-box-shadow: 0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        -moz-box-shadow:    0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        box-shadow:         0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+    }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
