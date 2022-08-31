@@ -1,6 +1,7 @@
 import React from 'react'
 import gmano from '../img/gmano.jpg'
 import gsap from 'gsap'
+import { Controller, Scene } from 'react-scrollmagic'
 import { useRef } from 'react'
 
 function AboutMe() {
@@ -25,7 +26,7 @@ function AboutMe() {
     <button data-tilt="" data-tilt-glare="true" data-tilt-max="5" data-tilt-speed="200" data-tilt-perspective="500" onClick={() => document.getElementById('skillsdiv').scrollIntoView()} class="whatidobtn">What I do</button>
       </div>
       <div class="col-7" ref={imageRef}>
-        <img src={gmano} onClick={() => gsap.to(imageRef.current, { rotation: "+= 360" })} class="gmano" alt="Nice looking man :)"/>
+        <img src={gmano} class="gmano" alt="Nice looking man :)"/>
       </div>
     </div>
     </div>
