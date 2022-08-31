@@ -294,7 +294,7 @@ and (min-width : 1224px) {
         background-color:#7f84eb;
     }
     .aboutmebutton{
-        margin-top: 15vh;
+        margin-top: 20vh;
         font-family:'Poppins', sans-serif;
         color: var(--text-color);
         background-color: #FF0066;
@@ -306,7 +306,7 @@ and (min-width : 1224px) {
     }
     .gmano{
         margin-left: 20vw;
-        margin-top: 10vw;
+        margin-top: 15vw;
         width: auto;
         height: 20vw;
         border-radius: 50%;
@@ -324,6 +324,7 @@ and (min-width : 1224px) {
     }
     .SecondDiv{
         background-color: #44495C;
+        height: 100vh;
     }
     .SkillsDiv{
         background-color:#656E8E;
@@ -341,8 +342,9 @@ and (min-width : 1224px) {
     .skilltitle{
         color: var(--text-color);
         font-family:'Poppins', sans-serif;
-        font-weight: 700;
-        margin-bottom: 3vh;
+        font-weight: 800;
+        font-size: 1.5vw;
+        margin-bottom: 2vh;
         margin-left: 3vw;
     }
     .skillyear{

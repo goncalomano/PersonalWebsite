@@ -1,7 +1,11 @@
 import React from 'react'
 import gmano from '../img/gmano.jpg'
+import gsap from 'gsap'
+import { useRef } from 'react'
 
 function AboutMe() {
+    const imageRef = useRef();
+
   return (
     <div id="SecondDiv" class="SecondDiv container-fluid ontop">
     <div class="row">
@@ -18,10 +22,10 @@ function AboutMe() {
         Feel free to contact me over your future or current project.
         Lets have a talk!
     </h2>  
-    <button data-tilt="" data-tilt-max="5" data-tilt-speed="200" data-tilt-perspective="500" onClick={() => document.getElementById('skillsdiv').scrollIntoView()} class="whatidobtn">What I do</button>
+    <button data-tilt="" data-tilt-glare="true" data-tilt-max="5" data-tilt-speed="200" data-tilt-perspective="500" onClick={() => document.getElementById('skillsdiv').scrollIntoView()} class="whatidobtn">What I do</button>
       </div>
-      <div class="col-7">
-        <img src={gmano} class="gmano" alt="Nice looking man :)"/>
+      <div class="col-7" ref={imageRef}>
+        <img src={gmano} onClick={() => gsap.to(imageRef.current, { rotation: "+= 360" })} class="gmano" alt="Nice looking man :)"/>
       </div>
     </div>
     </div>
