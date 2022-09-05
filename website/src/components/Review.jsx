@@ -7,10 +7,8 @@ function Review(props) {
             <div className="clientName">
                 {props.company}
             </div>
-            <div className="reviewDate">
-                {props.date}
-            </div>
         </div>
+        <hr class="reviewhr"></hr>
         <div className="reviewbody">
             Review Body
         </div>
