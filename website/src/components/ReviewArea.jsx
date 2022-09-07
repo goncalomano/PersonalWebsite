@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import { Navigation, Autoplay, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { getReviewsNumber } from '../firebase/firebase';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -8,30 +9,39 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
 import Review from './Review';
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 
 function ReviewArea() {
-  
+  var ReviewArray = useMemo(() => [], []);
+  const [reviewsNumber, setReviewsNumber] = useState("")
 
-
-  function createArray(){
-    const ReviewArray = [];
-    for (let i = 0; i<3; i++){
+  //eslint-disable-next-line
+  function PopulateArray(){  // Function to populate the review array with all the components
+    for (let i = 0; i<reviewsNumber; i++){
       //Create the review and assign it each value.
-
-      ReviewArray.push(<SwiperSlide className='reviewSlide'><Review company="Lemanuh"/></SwiperSlide>)
+      console.log("Pushed")
+      ReviewArray.push(<SwiperSlide key={i} className='reviewSlide'><Review id={i}/></SwiperSlide>)
     }
-    return ReviewArray
   }
 
-  
+  useEffect(() => {
+    (async () => {
+      setReviewsNumber(await getReviewsNumber())
+    })();
+    console.log(reviewsNumber)
+    PopulateArray()
+    console.log(ReviewArray)
+  }, [ReviewArray, reviewsNumber, PopulateArray])
+
   return (
     <div class="reviewDiv ontop">
+    <PopulateArray/>
     <Swiper
-      // install Swiper modules
       modules={[Navigation, Scrollbar, A11y, Autoplay]}
       spaceBetween={50}
-      slidesPerView={2}
+      slidesPerView={1}
       loop={true}
       autoplay={{
         delay: 2500,
@@ -42,7 +52,7 @@ function ReviewArea() {
       onSlideChange={() => console.log('You just looked through another amazing review in my portfolio :D how awesome !')}
       className="ontop"
     > 
-      {() => createArray()}
+      {ReviewArray}
     </Swiper>
     </div>
   )
