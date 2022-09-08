@@ -15,6 +15,7 @@
     "react-slick": "^0.29.0",
     "react-tilt": "^0.1.4",
     "react-tsparticles": "^2.2.4",
+    "react-typed": "^1.2.0",
     "react-vanilla-tilt": "^1.0.0",
     "serve": "^14.0.1",
     "swiper": "^8.3.2",

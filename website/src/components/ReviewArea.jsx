@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import { Navigation, Autoplay, Scrollbar, A11y } from 'swiper';
+import { Navigation, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { getReviewsNumber } from '../firebase/firebase';
 // Import Swiper styles
@@ -21,7 +21,6 @@ function ReviewArea() {
   function PopulateArray(){  // Function to populate the review array with all the components
     for (let i = 0; i<reviewsNumber; i++){
       //Create the review and assign it each value.
-      console.log("Pushed")
       ReviewArray.push(<SwiperSlide key={i} className='reviewSlide'><Review id={i}/></SwiperSlide>)
     }
   }
@@ -30,30 +29,32 @@ function ReviewArea() {
     (async () => {
       setReviewsNumber(await getReviewsNumber())
     })();
-    console.log(reviewsNumber)
     PopulateArray()
-    console.log(ReviewArray)
   }, [ReviewArray, reviewsNumber, PopulateArray])
 
   return (
     <div class="reviewDiv ontop">
+    <div class="reviewHeader">
+    <div class="aboutme2button">Reviews</div>
+    <h3 class="AboutMe2Header">Testimonials</h3>      
+    </div>
+    <div class="ReviewSlider container-fluid">
     <PopulateArray/>
     <Swiper
-      modules={[Navigation, Scrollbar, A11y, Autoplay]}
-      spaceBetween={50}
-      slidesPerView={1}
+      modules={[Navigation, Autoplay]}
+      spaceBetween={-20}
+      slidesPerView={3}
       loop={true}
       autoplay={{
-        delay: 2500,
+        delay: 6000,
         disableOnInteraction: false,
       }}
       navigation
-      scrollbar={{ draggable: true }}
-      onSlideChange={() => console.log('You just looked through another amazing review in my portfolio :D how awesome !')}
-      className="ontop"
+      className="ontop reviewSlider"
     > 
       {ReviewArray}
     </Swiper>
+    </div>
     </div>
   )
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import {GetClientName, getReviewByID } from '../firebase/firebase';
+import Typed from 'react-typed';
 function Review(props) {
   const [review, setReview] = useState("")
   const [author, setAuthor] = useState("")
@@ -19,9 +20,8 @@ function Review(props) {
               {author}
             </div>
         </div>
-        <hr class="reviewhr"></hr>
         <div className="reviewbody">
-          {review}
+          <h1 class="reviewText">{review}</h1>
         </div>
     </div>
   )

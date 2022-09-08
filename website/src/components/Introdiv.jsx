@@ -5,6 +5,7 @@ import coding from '../../src/img/coding.svg'
 import gsap from 'gsap'
 import { useRef } from 'react';
 import { useEffect } from 'react';
+import Typed from 'react-typed';
 function Introdiv() {
   const nameRef = useRef();
 
@@ -29,7 +30,13 @@ function Introdiv() {
           <div class="NameWrapper">
             <hr class="UpperHR"/>
             <h3 class="name" ref={nameRef}>Gonçalo <br/> Mano</h3>      
-            <p1 class="smalltext">Web Developer</p1>  
+            <Typed
+                    strings={['Web developer','Programmer','Front-end Developer']}
+                    loop
+                    typeSpeed={40}
+                    backSpeed={50}
+                    className="smalltext"
+                /> 
             <hr class="DownHR"/>    
             <button data-tilt="" data-tilt-max="5" data-tilt-speed="200" data-tilt-perspective="500" onClick={() => document.getElementById('SecondDiv').scrollIntoView()} class="aboutmebtn">About Me</button>
           </div>

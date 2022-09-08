@@ -1,7 +1,6 @@
 import React from 'react'
 import gmano from '../img/gmano.jpg'
 import { useRef ,} from 'react'
-
 function AboutMe() {
     const imageRef = useRef();
   return (  
