@@ -2,7 +2,6 @@ import React from 'react'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import {GetClientName, getReviewByID } from '../firebase/firebase';
-import Typed from 'react-typed';
 function Review(props) {
   const [review, setReview] = useState("")
   const [author, setAuthor] = useState("")

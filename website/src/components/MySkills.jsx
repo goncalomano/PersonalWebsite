@@ -83,6 +83,14 @@ function MySkills() {
         </div>
         </Tilt>
       </div>
+      <div className="row">
+        <div className="col-3">
+        <button data-tilt="" data-tilt-glare="true" data-tilt-max="5" data-tilt-speed="200" data-tilt-perspective="500" onClick={() => document.getElementById('Reviews').scrollIntoView()} class="whatidobtn bg-react">Testimonials</button>
+        </div>
+        <div className="col-9">
+
+        </div>
+      </div>
     </div>
   )
 }

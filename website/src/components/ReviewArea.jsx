@@ -33,7 +33,7 @@ function ReviewArea() {
   }, [ReviewArray, reviewsNumber, PopulateArray])
 
   return (
-    <div class="reviewDiv ontop">
+    <div class="reviewDiv ontop" id="Reviews">
     <div class="reviewHeader">
     <div class="aboutme2button">Reviews</div>
     <h3 class="AboutMe2Header">Testimonials</h3>      
@@ -55,6 +55,7 @@ function ReviewArea() {
       {ReviewArray}
     </Swiper>
     </div>
+    <button data-tilt="" data-tilt-glare="true" data-tilt-max="5" data-tilt-speed="200" data-tilt-perspective="500" onClick={() => document.getElementById('ContactMe').scrollIntoView()} class="whatidobtn bg-react">Get in Touch</button>
     </div>
   )
 }

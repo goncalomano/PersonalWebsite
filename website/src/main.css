@@ -241,6 +241,10 @@ and (min-width : 1224px) {
         margin-top: -2vw;
         height: 0.5vh;
     }
+
+    .bg-react{
+        background-color: #04A5D7 !important;
+    }
     .DownHR{
         margin-left: 3.4vw;
         background-color: #7363E3;
@@ -520,7 +524,7 @@ and (min-width : 1224px) {
     .review{
         border-radius: 2vw;
         background-color: #323647;  
-        width: 30vw;
+        width: 28vw;
         height: 20vw;
         -webkit-box-shadow: 0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
         -moz-box-shadow:    0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
@@ -567,7 +571,103 @@ and (min-width : 1224px) {
         margin-left: 4vw;
     }
 
+    .ContactForm{
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
+    .contactHeader{
+        display: flex;
+        justify-content: center;
+    }
+    .ReachMe{
+        font-family:'Poppins', sans-serif;
+        color: var(--text-color);
+        font-weight: 700;
+        font-size: 5vw;
+    }
+
+    .InstagramEmbed{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .instagram-media{
+        border-radius: 2vw !important;
+    }
+
+    .Socials{
+        background-color: #323647;
+        height: 45vw;
+        width: 45vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 2vw;
+        -webkit-box-shadow: 1px 0px 18px 5px rgba(0,0,0,0.34); 
+        box-shadow: 1px 0px 18px 5px rgba(0,0,0,0.34);
+    }
+    
+    .ContactMe{
+        font-family:'Poppins', sans-serif;
+        color: var(--text-color);
+        font-weight: 700;
+        font-size: 3vw;
+        margin-left: auto;
+        margin-right: auto;
+
+    
+    }
+
+    .SocialMedia{
+        background-color: #434658;
+        width: 90%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-radius: 2vw;
+    }
+
+    .social{
+        display: flex;
+        align-items: center;
+        border-radius: 2vw;
+    }
+
+    .socialTitle{
+        font-family:'Poppins', sans-serif;
+        color: var(--text-color);
+        font-weight: 400;
+        font-size: 2vw;
+        opacity: 0.8;
+    }
+
+    .socialicon{
+        color: var(--text-color);
+        font-size: 3vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+    .BuyMeCoffee{
+        position:fixed;
+        z-index: 10;
+        bottom: 0;
+        left: 2;
+        height: 3vw;
+        margin-left: 1vw;
+        margin-bottom: 1vw;
+        -webkit-box-shadow: 1px 0px 18px 5px rgba(0,0,0,0.34); 
+        box-shadow: 1px 0px 18px 5px rgba(0,0,0,0.34);
+        border-radius: 2vw !important;
+    }
 }
 
 /* Large screens ----------- */
