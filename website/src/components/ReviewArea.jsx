@@ -43,13 +43,13 @@ function ReviewArea() {
     <Swiper
       modules={[Navigation, Autoplay]}
       spaceBetween={-20}
-      slidesPerView={3}
+      slidesPerView={2}
+      navigation
       loop={true}
       autoplay={{
         delay: 6000,
         disableOnInteraction: false,
       }}
-      navigation
       className="ontop reviewSlider"
     > 
       {ReviewArray}
