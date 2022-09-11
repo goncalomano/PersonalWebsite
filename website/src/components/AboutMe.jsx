@@ -6,9 +6,9 @@ function AboutMe() {
   return (  
     <div id="SecondDiv" class="SecondDiv container-fluid ontop">
     <div class="row">
-      <div class="col-5">
+      <div class="col-5 ">
     <div class="aboutmebutton">About Me</div>
-    <h3 class="AboutMeHeader">A bit about me</h3>
+    <h3 class="AboutMeHeader ovh">A bit about me</h3>
     <h2 class="AboutMeText">Hi! I'm Gonçalo. A portuguese programmer and WebDesigner.
         Currently studying Computer Cience in Portugal.
         <br/>

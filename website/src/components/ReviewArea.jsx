@@ -14,6 +14,8 @@ import { useState } from 'react';
 
 
 function ReviewArea() {
+  var [quantity, setQuantity] = useState("1");
+  const [windowSize, setWindowSize] = useState(getWindowSize());
   var ReviewArray = useMemo(() => [], []);
   const [reviewsNumber, setReviewsNumber] = useState("")
 
@@ -25,12 +27,35 @@ function ReviewArea() {
     }
   }
 
+
+  function getWindowSize() {
+    const {innerWidth, innerHeight} = window;
+    return {innerWidth, innerHeight};
+  }
+
   useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+
+
+  }, [windowSize.innerHeight, windowSize.innerWidth]);
+
+  useEffect(() => {
+    if(windowSize.innerWidth > 750){
+      setQuantity("2")
+    }
     (async () => {
       setReviewsNumber(await getReviewsNumber())
     })();
     PopulateArray()
-  }, [ReviewArray, reviewsNumber, PopulateArray])
+  }, [ReviewArray, reviewsNumber, PopulateArray, windowSize.innerWidth])
 
   return (
     <div class="reviewDiv ontop" id="Reviews">
@@ -43,7 +68,7 @@ function ReviewArea() {
     <Swiper
       modules={[Navigation, Autoplay]}
       spaceBetween={-20}
-      slidesPerView={2}
+      slidesPerView={quantity}
       navigation
       loop={true}
       autoplay={{
