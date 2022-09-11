@@ -80,7 +80,7 @@ function ReviewArea() {
       {ReviewArray}
     </Swiper>
     </div>
-    <button data-tilt="" data-tilt-glare="true" data-tilt-max="5" data-tilt-speed="200" data-tilt-perspective="500" onClick={() => document.getElementById('ContactMe').scrollIntoView()} class="whatidobtn bg-react">Get in Touch</button>
+    <button data-tilt="" data-tilt-glare="true" data-tilt-max="5" data-tilt-speed="200" data-tilt-perspective="500" onClick={() => document.getElementById('ContactMe').scrollIntoView()} class="bg-react">Get in Touch</button>
     </div>
   )
 }

@@ -84,7 +84,23 @@ and (max-device-width : 480px) {
     }
 
     .bg-react{
-        background-color: #04A5D7 !important;
+        margin-top: 10vw;
+        margin-bottom: 6vw;
+        margin-left: 3vw;
+        height: 10vw;
+        width: 38vw;
+        z-index:3;
+        color: var(--text-color);
+        font-weight: 700;
+        font-family:'Poppins', sans-serif;
+        border-radius: 2.5vw;
+        border:none;
+        font-size: 4vw;
+        transition: background-color 0.5s;
+        -webkit-box-shadow: 0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        -moz-box-shadow:    0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        box-shadow:         0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        background-color:#FF0066;
         margin-top: 10vw !important;
     }
     .DownHR{
@@ -598,7 +614,23 @@ and (max-width : 320px) {
     }
 
     .bg-react{
-        background-color: #04A5D7 !important;
+        margin-top: 10vw;
+        margin-bottom: 6vw;
+        margin-left: 3vw;
+        height: 10vw;
+        width: 38vw;
+        z-index:3;
+        color: var(--text-color);
+        font-weight: 700;
+        font-family:'Poppins', sans-serif;
+        border-radius: 2.5vw;
+        border:none;
+        font-size: 4vw;
+        transition: background-color 0.5s;
+        -webkit-box-shadow: 0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        -moz-box-shadow:    0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        box-shadow:         0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        background-color:#FF0066;
         margin-top: 10vw !important;
     }
     .DownHR{
@@ -1118,7 +1150,23 @@ and (orientation : landscape) {
     }
 
     .bg-react{
-        background-color: #04A5D7 !important;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        margin-left: 3vw;
+        height: 5vw;
+        width: 18vw;
+        z-index:3;
+        color: var(--text-color);
+        font-weight: 700;
+        font-family:'Poppins', sans-serif;
+        border-radius: 1vw;
+        border:none;
+        font-size: 2vw;
+        transition: background-color 0.5s;
+        -webkit-box-shadow: 0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        -moz-box-shadow:    0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        box-shadow:         0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        background-color:#FF0066;
     }
     .DownHR{
         margin-left: 3.4vw;
@@ -1469,6 +1517,8 @@ and (orientation : landscape) {
     }
 
     .InstagramEmbed{
+        position: relative;
+        margin-top: 50vh;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1600,7 +1650,23 @@ and (orientation : portrait) {
     }
 
     .bg-react{
-        background-color: #04A5D7 !important;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        margin-left: 3vw;
+        height: 5vw;
+        width: 18vw;
+        z-index:3;
+        color: var(--text-color);
+        font-weight: 700;
+        font-family:'Poppins', sans-serif;
+        border-radius: 1vw;
+        border:none;
+        font-size: 2vw;
+        transition: background-color 0.5s;
+        -webkit-box-shadow: 0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        -moz-box-shadow:    0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        box-shadow:         0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        background-color:#FF0066;
     }
     .DownHR{
         margin-left: 3.4vw;
@@ -2087,16 +2153,33 @@ and (min-width : 1224px) {
     }
 
     .bg-react{
-        background-color: #04A5D7 !important;
+        position:relative;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        margin-left: 3vw;
+        height: 5vw;
+        width: 18vw;
+        z-index:3;
+        color: var(--text-color);
+        font-weight: 700;
+        font-family:'Poppins', sans-serif;
+        border-radius: 1vw;
+        border:none;
+        font-size: 2vw;
+        transition: background-color 0.5s;
+        -webkit-box-shadow: 0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        -moz-box-shadow:    0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        box-shadow:         0px 0px 1vw 0px rgba(50, 50, 50, 0.7);
+        background-color:#FF0066;
     }
     .DownHR{
         margin-left: 3.4vw;
         background-color: #7363E3;
         opacity: 1;
         width:35vw;
-        position:absolute;
+        position:relative;
         margin-top: 2vw;
-        margin-bottom: 2vw;
+        margin-bottom: vh;
         height: 1vh;
     }
     .AboutMeHeader{
@@ -2120,8 +2203,9 @@ and (min-width : 1224px) {
         line-height:2vw;
     }
     .aboutmebtn{
-        position: absolute;
-        margin-top: 6vw;
+        position: relative;
+        margin-top: 2vw;
+        margin-bottom: 30vh;
         margin-left: 3vw;
         height: 5vw;
         width: 18vw;
@@ -2148,6 +2232,7 @@ and (min-width : 1224px) {
         background-color: #FF0066;
         border-radius: 2vw;
         text-align: center;
+        position: relative;
         font-weight: 600;
         width: 10vw;
         margin-left: 3vw;
@@ -2169,6 +2254,7 @@ and (min-width : 1224px) {
         color: var(--text-color);
         margin-top: 20vh;
         position: relative;
+        margin-bottom: 0vh;
     }
     .SecondDiv{
         background-color: #44495C;
@@ -2301,7 +2387,7 @@ and (min-width : 1224px) {
 
     .reviewDiv{
         background-color: #44495B;
-        height: 100vh !important;
+        height: 120vh !important;
         display: flex;
         align-items: center;
         background-color: #EE6535;
