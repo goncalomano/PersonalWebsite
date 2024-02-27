@@ -1,4 +1,4 @@
-# Personal Website
+# Personal Website [OLD]
 
 This repo hosts all the code used to make my personal website wich you can check out [here](https://goncalomano.com)
 Some technologies used so far are **react** , **bootstrap** , **gsap** and **scrollmagic**
